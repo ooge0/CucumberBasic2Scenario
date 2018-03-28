@@ -4,7 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-
+// change order of methods
 public class LoginStep {
 
     @Given("^I navigate to the login page$")
