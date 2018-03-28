@@ -2,6 +2,7 @@ package Steps;
 
 import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -35,7 +36,7 @@ public class LoginStep {
     @And("^I enter the the following for login$")
     public void iEnterTheTheFollowingForLogin(DataTable table) throws Throwable {
         List<List<String>> data = table.raw();
-       
+
         //create an ArrayList
         List<User> users = new ArrayList<User>();
 
@@ -49,6 +50,13 @@ public class LoginStep {
         }
 
         //throw new PendingException();
+    }
+
+    @And("^I enter ([^\"]*) and ([^\"]*)$")
+    public void iEnterUsernameAndPassword(String userName , String password) throws Throwable {
+        System.out.println("Username is : " + userName);
+        System.out.println("Password is : " + password);
+
     }
 
     public class User {
