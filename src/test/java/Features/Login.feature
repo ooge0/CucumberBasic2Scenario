@@ -16,5 +16,6 @@ Feature: LoginFeature
     Then I should see the userform
 
     Examples:
-      | username | password   |
-      | execute  | automation |
+      | username | password       |
+      | admin1   | adminpassword1 |
+      | admin2   | adminpassword2 |

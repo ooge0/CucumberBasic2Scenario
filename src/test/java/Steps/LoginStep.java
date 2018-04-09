@@ -1,13 +1,11 @@
 package Steps;
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-import java.util.AbstractList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,14 +14,14 @@ public class LoginStep {
 
     @Given("^I navigate to the login page$")
     public void iNavigateToLoginPage() throws Throwable {
-        System.out.println("I navigate to the login page");
+        System.out.println("I navigate to the login page \n");
         //throw new PendingException();
 
     }
 
     @And("^I click the login button$")
     public void iClickLoginButton() throws Throwable {
-        System.out.println("I click the login form");
+        System.out.println("I click the login form \n");
         // throw new PendingException();
     }
 
@@ -43,7 +41,7 @@ public class LoginStep {
 
         // store all users
         users = table.asList(User.class);
-        //create FOR cycle for each elements of List <user>
+        //create FOR cycle for each elements of List <user> //
 
         for (User user: users) {
             System.out.println("UserName is " + user.username);
