@@ -34,7 +34,7 @@ public class LoginStep {
 
     @And("^I enter the the following for login$")
     public void iEnterTheTheFollowingForLogin(DataTable table) throws Throwable {
-        List<List<String>> data = table.raw();
+       // List<List<String>> data = table.raw();
 
         //create an ArrayList
         List<User> users = new ArrayList<User>();
