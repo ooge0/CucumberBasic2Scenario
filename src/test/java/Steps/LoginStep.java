@@ -15,21 +15,18 @@ public class LoginStep {
     @Given("^I navigate to the login page$")
     public void iNavigateToLoginPage() throws Throwable {
         System.out.println("I navigate to the login page \n");
-        //throw new PendingException();
-
-    }
+           }
 
     @And("^I click the login button$")
     public void iClickLoginButton() throws Throwable {
         System.out.println("I click the login form \n");
-        // throw new PendingException();
+       
     }
 
     @Then("^I should see the userform$")
     public void iShouldSeeTheUserform() throws Throwable {
         System.out.println("I should see the user form");
-        // throw new PendingException();
-        //sdfdsfv
+       
     }
 
     @And("^I enter the the following for login$")
@@ -48,7 +45,7 @@ public class LoginStep {
             System.out.println("Password is " + user.password);
         }
 
-        //throw new PendingException();
+       
     }
 
     @And("^I enter ([^\"]*) and ([^\"]*)$")
